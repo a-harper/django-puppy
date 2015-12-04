@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Puppy</title>
+     <!-- Bootstrap -->
+    {% load staticfiles %}
+    <link href="{% static "puppy/css/bootstrap.css" %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img style="margin:auto; padding-top: 20px; width:100%; max-width:600px;" src="{{ puppy }}" />
+    </div>
+    <script src="{% static "puppy/js/jquery.js" %}"></script>
+    <script src="{% static "puppy/js/bootstrap.js" %}"></script>
+</body>
+</html>
